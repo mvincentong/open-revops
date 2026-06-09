@@ -1,0 +1,129 @@
+.trace {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.step {
+  position: relative;
+  display: flex;
+  gap: 14px;
+  padding-bottom: 20px;
+}
+
+.step:last-child {
+  padding-bottom: 0;
+}
+
+/* Connecting line between markers */
+.step:not(:last-child)::before {
+  content: '';
+  position: absolute;
+  left: 5px;
+  top: 16px;
+  bottom: -4px;
+  width: 2px;
+  background: linear-gradient(180deg, var(--border-strong), transparent);
+}
+
+.marker {
+  flex-shrink: 0;
+  margin-top: 4px;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: var(--info);
+  box-shadow: 0 0 0 4px var(--info-dim);
+}
+
+.stepBody {
+  flex: 1;
+}
+
+.stepBody .eyebrow {
+  margin: 0 0 6px;
+}
+
+.text {
+  margin: 0;
+  color: var(--text);
+}
+
+.code {
+  font-family: var(--font-mono);
+  font-size: 12px;
+  padding: 1px 6px;
+  border-radius: 5px;
+  background: var(--info-dim);
+  color: var(--info);
+}
+
+.codeFaint {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  color: var(--text-faint);
+}
+
+.scoreBad {
+  color: var(--warn);
+}
+
+.alternatives {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.alternative,
+.chosen {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 9px 12px;
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--border);
+  background: rgba(255, 255, 255, 0.015);
+  font-size: 14px;
+}
+
+.chosen {
+  border-color: rgba(46, 230, 166, 0.4);
+  background: var(--accent-dim);
+  color: var(--text);
+  font-weight: 600;
+}
+
+.chosenTag {
+  font-family: var(--font-mono);
+  font-size: 10px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--accent);
+  border: 1px solid rgba(46, 230, 166, 0.4);
+  border-radius: 999px;
+  padding: 2px 8px;
+}
+
+.alternative {
+  color: var(--text-muted);
+}
+
+.chosen code,
+.alternative code {
+  margin-left: auto;
+}
+
+.rationale {
+  margin: 0;
+  color: var(--text);
+  line-height: 1.6;
+  padding: 12px 14px;
+  border-left: 2px solid var(--border-strong);
+  background: rgba(255, 255, 255, 0.015);
+  border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+}

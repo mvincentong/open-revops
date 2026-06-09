@@ -1,0 +1,92 @@
+:root {
+  /* Surfaces */
+  --bg: #060a11;
+  --bg-grid: rgba(86, 130, 184, 0.06);
+  --panel: #0d141f;
+  --panel-raised: #111a28;
+  --border: #1d2937;
+  --border-strong: #2a3a4f;
+
+  /* Text */
+  --text: #e7eef7;
+  --text-muted: #8aa0b8;
+  --text-faint: #5b6e85;
+
+  /* Accents */
+  --accent: #2ee6a6; /* good / reduced risk */
+  --accent-dim: rgba(46, 230, 166, 0.14);
+  --warn: #f5b945; /* needs approval */
+  --warn-dim: rgba(245, 185, 69, 0.14);
+  --danger: #ff5d6c; /* deny / blocked */
+  --danger-dim: rgba(255, 93, 108, 0.14);
+  --info: #5cc8ff; /* neutral data */
+  --info-dim: rgba(92, 200, 255, 0.12);
+
+  --radius: 12px;
+  --radius-sm: 8px;
+  --shadow: 0 1px 0 rgba(255, 255, 255, 0.03), 0 18px 40px -24px rgba(0, 0, 0, 0.8);
+
+  --font-mono: ui-monospace, "SF Mono", "JetBrains Mono", "Fira Code", Menlo, Consolas,
+    monospace;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--bg);
+  background-image:
+    linear-gradient(var(--bg-grid) 1px, transparent 1px),
+    linear-gradient(90deg, var(--bg-grid) 1px, transparent 1px);
+  background-size: 40px 40px;
+  background-position: center top;
+  color: var(--text);
+  font-family:
+    -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  font-size: 15px;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  min-height: 100vh;
+}
+
+h1,
+h2,
+h3 {
+  margin: 0;
+  font-weight: 650;
+  letter-spacing: -0.01em;
+}
+
+a {
+  color: var(--info);
+}
+
+/* Shared eyebrow / section label */
+.eyebrow {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--text-faint);
+}
+
+/* Focus ring for keyboard accessibility */
+:focus-visible {
+  outline: 2px solid var(--info);
+  outline-offset: 2px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.001ms !important;
+    transition-duration: 0.001ms !important;
+  }
+}
