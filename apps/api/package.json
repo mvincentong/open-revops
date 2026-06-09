@@ -5,5 +5,33 @@
   "description": "Agent API and orchestration — run, approval, and audit endpoints.",
   "license": "Apache-2.0",
   "type": "module",
-  "scripts": {}
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "default": "./dist/index.js"
+    }
+  },
+  "files": ["dist"],
+  "scripts": {
+    "dev": "tsc -p tsconfig.build.json && node dist/server.js",
+    "lint": "eslint \"src/**/*.ts\"",
+    "typecheck": "tsc --noEmit -p tsconfig.json",
+    "test": "vitest run",
+    "build": "tsc -p tsconfig.build.json"
+  },
+  "dependencies": {
+    "@open-revops/agent-core": "workspace:*",
+    "@open-revops/connectors-storage": "workspace:*",
+    "@open-revops/connectors-stripe": "workspace:*",
+    "@open-revops/demo-data": "workspace:*",
+    "@open-revops/policy-engine": "workspace:*",
+    "fastify": "^5.8.5"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "eslint": "^9.39.4",
+    "typescript-eslint": "^8.46.0"
+  }
 }
