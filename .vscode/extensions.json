@@ -1,0 +1,9 @@
+{
+  "// ": "Recommended extensions for contributors. VS Code offers to install these on open.",
+  "recommendations": [
+    "esbenp.prettier-vscode",
+    "dbaeumer.vscode-eslint",
+    "editorconfig.editorconfig",
+    "davidanson.vscode-markdownlint"
+  ]
+}

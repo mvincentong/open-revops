@@ -1,0 +1,23 @@
+OpenRevOps
+Copyright 2026 OpenRevOps Contributors
+
+This product includes software developed by the OpenRevOps Contributors.
+
+Licensed under the Apache License, Version 2.0 (the "License"); you may not
+use this software except in compliance with the License. A copy of the
+License is provided in the LICENSE file at the root of this repository.
+
+------------------------------------------------------------------------------
+Third-party notices
+------------------------------------------------------------------------------
+This project integrates with, but does not redistribute, the following
+third-party services. Their respective trademarks belong to their owners and
+are used only descriptively:
+
+  - Stripe (billing/payment actions)        https://stripe.com
+  - Exa   (research/retrieval context)      https://exa.ai
+  - Vercel (frontend hosting / AI Gateway)  https://vercel.com
+  - Amazon Web Services (agent runtime)     https://aws.amazon.com
+
+Dependency-level attributions are generated from package manifests; run the
+license audit task in CI to produce a current third-party license report.

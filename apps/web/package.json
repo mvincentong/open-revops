@@ -1,0 +1,9 @@
+{
+  "name": "@open-revops/web",
+  "version": "0.0.0",
+  "private": true,
+  "description": "Next.js operator UI — recommendations, approvals, decision trace, audit timeline, and the KPI panel.",
+  "license": "Apache-2.0",
+  "type": "module",
+  "scripts": {}
+}

@@ -1,0 +1,9 @@
+{
+  "name": "@open-revops/policy-engine",
+  "version": "0.0.0",
+  "private": true,
+  "description": "Guardrails, approval gates, confidence thresholds, and the kill-switch.",
+  "license": "Apache-2.0",
+  "type": "module",
+  "scripts": {}
+}

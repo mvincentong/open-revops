@@ -1,0 +1,46 @@
+name: Feature request
+description: Suggest an idea or improvement for OpenRevOps
+labels: ["enhancement", "needs-triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for the idea! For open-ended discussion, consider starting a
+        **Discussion** first. Please keep proposals within the project
+        [scope and non-goals](../blob/main/ROADMAP.md#non-goals).
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem / motivation
+      description: What problem does this solve? Who feels the pain, and when?
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed solution
+      description: What should happen? Sketch the behavior, interface, or UX.
+    validations:
+      required: true
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives considered
+      description: Other approaches you weighed and why you set them aside.
+  - type: dropdown
+    id: scope
+    attributes:
+      label: Scope fit
+      description: How does this relate to the MVP scope?
+      options:
+        - Fits current MVP scope
+        - Future milestone (v0.2+)
+        - Unsure — needs discussion
+    validations:
+      required: true
+  - type: checkboxes
+    id: contribute
+    attributes:
+      label: Contribution
+      options:
+        - label: I'd be willing to help implement this.

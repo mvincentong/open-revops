@@ -1,0 +1,33 @@
+{
+  "name": "open-revops",
+  "version": "0.0.0",
+  "private": true,
+  "description": "Open-source revenue agents for usage-based companies — detect leakage, recommend a billing action, gate on approval, execute via Stripe, and audit.",
+  "license": "Apache-2.0",
+  "type": "module",
+  "homepage": "https://github.com/mvincentong/open-revops#readme",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mvincentong/open-revops.git"
+  },
+  "bugs": {
+    "url": "https://github.com/mvincentong/open-revops/issues"
+  },
+  "packageManager": "pnpm@10.32.1",
+  "engines": {
+    "node": ">=22",
+    "pnpm": ">=10"
+  },
+  "scripts": {
+    "lint": "pnpm -r --if-present lint",
+    "format": "pnpm -r --if-present format",
+    "format:check": "pnpm -r --if-present format:check",
+    "typecheck": "pnpm -r --if-present typecheck",
+    "test": "pnpm -r --if-present test",
+    "build": "pnpm -r --if-present build",
+    "dev": "node scripts/dev.mjs",
+    "demo:seed": "node scripts/demo-seed.mjs",
+    "demo:reset": "node scripts/demo-reset.mjs",
+    "secrets:scan": "gitleaks detect --config .gitleaks.toml --redact --no-banner"
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "name": "@open-revops/domain-pricing",
+  "version": "0.0.0",
+  "private": true,
+  "description": "Outcome-to-Invoice domain logic.",
+  "license": "Apache-2.0",
+  "type": "module",
+  "scripts": {}
+}

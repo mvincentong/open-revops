@@ -1,0 +1,9 @@
+{
+  "name": "@open-revops/api",
+  "version": "0.0.0",
+  "private": true,
+  "description": "Agent API and orchestration — run, approval, and audit endpoints.",
+  "license": "Apache-2.0",
+  "type": "module",
+  "scripts": {}
+}

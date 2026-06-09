@@ -1,0 +1,9 @@
+{
+  "name": "@open-revops/connectors-exa",
+  "version": "0.0.0",
+  "private": true,
+  "description": "Exa research/context retrieval adapter (read path).",
+  "license": "Apache-2.0",
+  "type": "module",
+  "scripts": {}
+}

@@ -1,0 +1,11 @@
+node_modules/
+dist/
+build/
+out/
+.next/
+.turbo/
+.vercel/
+coverage/
+pnpm-lock.yaml
+*.md
+CHANGELOG.md

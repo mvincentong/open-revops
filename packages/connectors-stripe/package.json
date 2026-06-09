@@ -1,0 +1,9 @@
+{
+  "name": "@open-revops/connectors-stripe",
+  "version": "0.0.0",
+  "private": true,
+  "description": "Stripe billing/checkout/dispute action adapters (write path).",
+  "license": "Apache-2.0",
+  "type": "module",
+  "scripts": {}
+}

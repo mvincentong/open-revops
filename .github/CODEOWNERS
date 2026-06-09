@@ -1,0 +1,40 @@
+# CODEOWNERS — who reviews what.
+# Owner is set to @mvincentong. Swap individual entries to a GitHub team
+# (e.g. @open-revops/core) once one exists to require code-owner review.
+# Last matching pattern wins. Docs: https://docs.github.com/articles/about-code-owners
+
+# Default owner for everything not matched below.
+*                           @mvincentong
+
+# Cross-cutting config, CI, and release plumbing (change with care).
+/.github/                   @mvincentong
+/.claude/                   @mvincentong
+/AGENTS.md                  @mvincentong
+/CLAUDE.md                  @mvincentong
+/SECURITY.md                @mvincentong
+/.gitleaks.toml             @mvincentong
+
+# Agent core & policy (decision logic, guardrails, approval gates).
+/packages/agent-core/       @mvincentong
+/packages/policy-engine/    @mvincentong
+
+# Connectors & webhook handling (external actions).
+/packages/connectors-stripe/   @mvincentong
+/packages/connectors-exa/      @mvincentong
+/packages/connectors-storage/  @mvincentong
+
+# Domain logic.
+/packages/domain-pricing/   @mvincentong
+/packages/domain-renewals/  @mvincentong
+
+# Data, evals, and the deterministic golden path.
+/packages/demo-data/        @mvincentong
+/packages/evals/            @mvincentong
+
+# Apps.
+/apps/web/                  @mvincentong
+/apps/api/                  @mvincentong
+
+# Docs & submission-facing material.
+/docs/                      @mvincentong
+/README.md                  @mvincentong

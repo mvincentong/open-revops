@@ -1,0 +1,102 @@
+# ---------------------------------------------------------------------------
+# Secrets & credentials — NEVER commit these. (See SECURITY.md)
+# ---------------------------------------------------------------------------
+.env
+.env.*
+!.env.example
+*.local
+.env.local
+.env.*.local
+secrets/
+*.pem
+*.key
+*.p12
+*.pfx
+*.keystore
+*.jks
+id_rsa*
+id_ed25519*
+*.crt
+credentials.json
+service-account*.json
+gcp-*.json
+aws-credentials*
+.aws/
+.npmrc.local
+.dopplerrc
+# Stripe / Exa / provider keys sometimes dumped to files during debugging
+stripe-*.json
+*secret*.json
+*credential*.json
+
+# ---------------------------------------------------------------------------
+# Claude Code — personal/local only (team config IS committed in .claude/)
+# ---------------------------------------------------------------------------
+.claude/settings.local.json
+.claude/*.local.json
+.claude/agent-memory-local/
+.claude/.cache/
+
+# ---------------------------------------------------------------------------
+# Node / package managers
+# ---------------------------------------------------------------------------
+node_modules/
+.pnpm-store/
+.pnpm-debug.log*
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.yarn/cache
+.yarn/unplugged
+.yarn/install-state.gz
+
+# ---------------------------------------------------------------------------
+# Build output / caches
+# ---------------------------------------------------------------------------
+dist/
+build/
+out/
+.next/
+.turbo/
+.vercel/
+.output/
+*.tsbuildinfo
+coverage/
+.nyc_output/
+.cache/
+.eslintcache
+
+# ---------------------------------------------------------------------------
+# Infra / cloud artifacts
+# ---------------------------------------------------------------------------
+.serverless/
+cdk.out/
+.terraform/
+*.tfstate
+*.tfstate.*
+.sam/
+
+# ---------------------------------------------------------------------------
+# OS / editor cruft
+# ---------------------------------------------------------------------------
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*~
+.idea/
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json.example
+
+# ---------------------------------------------------------------------------
+# Logs / temp / local databases
+# ---------------------------------------------------------------------------
+*.log
+logs/
+tmp/
+.tmp/
+*.sqlite
+*.sqlite3
+*.db
+local-db/

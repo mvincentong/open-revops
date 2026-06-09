@@ -1,0 +1,62 @@
+{
+  "scenario_id": "golden_path_v1",
+  "description": "Deterministic golden-path run: detect leakage risk on a synthetic account, recommend a credit, pause at the approval gate, execute a Stripe sandbox action, and append an audit record. All data is synthetic. This file is the data contract the demo and evals assert against; see docs/decision-trace-spec.md.",
+  "request": {
+    "account_id": "acct_demo_001",
+    "scenario_id": "golden_path_v1",
+    "run_mode": "dry_run"
+  },
+  "response": {
+    "run_id": "run_001",
+    "status": "needs_approval",
+    "recommendation": {
+      "action_type": "apply_credit",
+      "confidence": 0.86,
+      "expected_kpi_delta": {
+        "metric": "leakage_risk",
+        "before": 0.14,
+        "after": 0.05
+      }
+    },
+    "alternatives_considered": ["change_plan_tier", "invoice_alert_only"],
+    "rationale": "Usage pattern indicates recoverable leakage; a credit is the lowest-risk in-policy action. Confidence 0.86 is below the auto-execute threshold and the action is irreversible, so it routes to human approval."
+  },
+  "approval": {
+    "run_id": "run_001",
+    "approved_by": "demo_operator",
+    "decision": "approve",
+    "notes": "Proceed for demo"
+  },
+  "audit_log": [
+    {
+      "timestamp": "2026-06-09T12:34:50Z",
+      "run_id": "run_001",
+      "event_type": "recommendation_made",
+      "actor": "agent",
+      "connector": null,
+      "result": "needs_approval"
+    },
+    {
+      "timestamp": "2026-06-09T12:34:55Z",
+      "run_id": "run_001",
+      "event_type": "approval_recorded",
+      "actor": "demo_operator",
+      "connector": null,
+      "result": "approve"
+    },
+    {
+      "timestamp": "2026-06-09T12:34:56Z",
+      "run_id": "run_001",
+      "event_type": "action_executed",
+      "actor": "demo_operator",
+      "connector": "stripe",
+      "idempotency_key": "run_001:apply_credit",
+      "result": "success"
+    }
+  ],
+  "secondary_kpi": {
+    "metric": "operator_time_to_action_minutes",
+    "before": 30,
+    "after": 3
+  }
+}

@@ -1,0 +1,31 @@
+lockfileVersion: '9.0'
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
+importers:
+
+  .: {}
+
+  apps/api: {}
+
+  apps/web: {}
+
+  packages/agent-core: {}
+
+  packages/connectors-exa: {}
+
+  packages/connectors-storage: {}
+
+  packages/connectors-stripe: {}
+
+  packages/demo-data: {}
+
+  packages/domain-pricing: {}
+
+  packages/domain-renewals: {}
+
+  packages/evals: {}
+
+  packages/policy-engine: {}

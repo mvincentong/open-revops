@@ -1,0 +1,21 @@
+# Normalize line endings across platforms.
+* text=auto eol=lf
+
+# Binary assets — never diff/merge as text.
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.ico binary
+*.pdf binary
+*.mp4 binary
+*.mov binary
+*.woff binary
+*.woff2 binary
+
+# Lockfiles: keep diffs but mark as generated for review collapsing.
+pnpm-lock.yaml linguist-generated=true
+package-lock.json linguist-generated=true
+
+# Keep shell scripts LF even on Windows checkouts.
+*.sh text eol=lf

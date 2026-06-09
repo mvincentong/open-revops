@@ -1,0 +1,30 @@
+# Gitleaks configuration for OpenRevOps secret scanning.
+# Runs in CI (.github/workflows/secret-scan.yml) and can be run locally:
+#     gitleaks detect --config .gitleaks.toml --redact
+#
+# Extends the upstream default ruleset (Stripe, AWS, generic API keys, etc.)
+# and adds project-specific allowlisting so the documented placeholders in
+# .env.example and docs do not trip the scanner.
+
+[extend]
+useDefault = true
+
+[allowlist]
+description = "Documented non-secret placeholders and example values"
+paths = [
+  '''\.env\.example''',
+  '''.*\.md''',
+  '''docs/.*''',
+]
+# Obvious placeholder/test tokens used in docs and examples.
+regexes = [
+  '''sk_test_xxx''',
+  '''pk_test_xxx''',
+  '''whsec_xxx''',
+  '''ghp_xxx''',
+  '''(?i)your[-_]?(api[-_]?key|token|secret)''',
+  '''(?i)xxx+''',
+  '''(?i)example''',
+]
+# Stripe LIVE keys (sk_live_, rk_live_) are intentionally NOT allowlisted —
+# they must never appear anywhere in this repository.

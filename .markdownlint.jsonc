@@ -1,0 +1,12 @@
+{
+  // https://github.com/DavidAnson/markdownlint
+  "default": true,
+  // Allow long lines (tables, URLs, prose).
+  "MD013": false,
+  // Allow inline HTML (badges, details blocks).
+  "MD033": false,
+  // Allow duplicate headings in different sections (e.g. "Usage").
+  "MD024": { "siblings_only": true },
+  // First line need not be a top-level heading (frontmatter, badges).
+  "MD041": false
+}

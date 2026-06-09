@@ -1,0 +1,9 @@
+{
+  "name": "@open-revops/demo-data",
+  "version": "0.0.0",
+  "private": true,
+  "description": "Deterministic synthetic accounts and usage events (seeded).",
+  "license": "Apache-2.0",
+  "type": "module",
+  "scripts": {}
+}
