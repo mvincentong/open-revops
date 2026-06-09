@@ -1,0 +1,125 @@
+.headline {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid var(--border);
+  flex-wrap: wrap;
+}
+
+.figure {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.figureLabel {
+  font-family: var(--font-mono);
+  font-size: 10px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--text-faint);
+}
+
+.before {
+  font-family: var(--font-mono);
+  font-size: 30px;
+  font-weight: 650;
+  line-height: 1;
+  color: var(--text-muted);
+}
+
+.after {
+  font-family: var(--font-mono);
+  font-size: 30px;
+  font-weight: 650;
+  line-height: 1;
+  color: var(--accent);
+}
+
+.arrow {
+  font-size: 22px;
+  color: var(--text-faint);
+}
+
+.deltaBadge {
+  margin-left: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 2px;
+  padding: 8px 12px;
+  border-radius: var(--radius-sm);
+  background: var(--accent-dim);
+  border: 1px solid rgba(46, 230, 166, 0.3);
+}
+
+.deltaValue {
+  font-family: var(--font-mono);
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--accent);
+  line-height: 1;
+}
+
+.deltaAbs {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  color: var(--text-muted);
+}
+
+.gauges {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 20px 0 6px;
+}
+
+.gauge {
+  display: grid;
+  grid-template-columns: 52px 1fr 48px;
+  align-items: center;
+  gap: 12px;
+}
+
+.gaugeLabel {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  color: var(--text-faint);
+  text-transform: uppercase;
+}
+
+.track {
+  height: 10px;
+  border-radius: 999px;
+  background: rgba(138, 160, 184, 0.1);
+  overflow: hidden;
+}
+
+.fill {
+  display: block;
+  height: 100%;
+  border-radius: 999px;
+  transition: width 0.7s ease;
+}
+
+.fillBefore {
+  background: linear-gradient(90deg, var(--warn), var(--danger));
+}
+
+.fillAfter {
+  background: linear-gradient(90deg, var(--info), var(--accent));
+}
+
+.gaugeValue {
+  font-family: var(--font-mono);
+  font-size: 13px;
+  color: var(--text);
+  text-align: right;
+}
+
+.caption {
+  margin: 14px 0 0;
+  font-size: 13px;
+  color: var(--text-muted);
+}

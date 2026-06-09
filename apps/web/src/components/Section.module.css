@@ -1,0 +1,40 @@
+.panel {
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(180deg, var(--panel-raised), var(--panel));
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  overflow: hidden;
+}
+
+.header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 16px 18px;
+  border-bottom: 1px solid var(--border);
+  background: rgba(255, 255, 255, 0.012);
+}
+
+.label {
+  margin: 0 0 4px;
+}
+
+.title {
+  font-size: 16px;
+  color: var(--text);
+}
+
+.aside {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.body {
+  padding: 18px;
+  flex: 1;
+}
