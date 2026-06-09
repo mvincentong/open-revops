@@ -89,7 +89,11 @@ importers:
         specifier: workspace:*
         version: link:../policy-engine
 
-  packages/connectors-exa: {}
+  packages/connectors-exa:
+    devDependencies:
+      '@types/node':
+        specifier: ^22.19.20
+        version: 22.19.20
 
   packages/connectors-storage:
     devDependencies:
