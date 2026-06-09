@@ -39,7 +39,7 @@ export async function POST(request: Request): Promise<NextResponse> {
   }
 
   try {
-    const result = await postUpstream('/api/agent/approval', approvalRequest, parseApprovalResponse);
+    const result = await postUpstream('/api/agent/approve', approvalRequest, parseApprovalResponse);
     return NextResponse.json(result, { status: 200 });
   } catch (cause) {
     if (cause instanceof UpstreamError) {
