@@ -19,7 +19,14 @@ importers:
 
   apps/web: {}
 
-  packages/agent-core: {}
+  packages/agent-core:
+    dependencies:
+      '@open-revops/demo-data':
+        specifier: workspace:*
+        version: link:../demo-data
+      '@open-revops/policy-engine':
+        specifier: workspace:*
+        version: link:../policy-engine
 
   packages/connectors-exa: {}
 
