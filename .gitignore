@@ -7,6 +7,8 @@
 *.local
 .env.local
 .env.*.local
+# direnv — may hold AWS_PROFILE/region; keep profile names out of git
+.envrc
 secrets/
 *.pem
 *.key
