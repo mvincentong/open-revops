@@ -1,0 +1,42 @@
+{
+  "_comment": "SYNTHETIC, hand-authored sample of an Exa /search response shape. No real data, no PII, no scraped content. example.test URLs are reserved for documentation. Used by replay mode to keep the golden path deterministic.",
+  "requestId": "synthetic-fixture-0001",
+  "autopromptString": "usage-based pricing revenue leakage best practices",
+  "results": [
+    {
+      "title": "Detecting Revenue Leakage in Usage-Based Pricing",
+      "url": "https://example.test/research/revenue-leakage-usage-based",
+      "publishedDate": "2025-01-15",
+      "author": "Synthetic Research Collective",
+      "score": 0.92,
+      "text": "Usage-based pricing introduces many rate dimensions, credits, and commitments. Under-monetized usage and metering gaps are among the most common sources of revenue leakage in hybrid pricing models.",
+      "highlights": [
+        "Under-monetized usage and metering gaps are among the most common sources of revenue leakage."
+      ]
+    },
+    {
+      "title": "A Failed-Payment Recovery Playbook",
+      "url": "https://example.test/guides/failed-payment-recovery",
+      "publishedDate": "2024-11-02",
+      "author": "Synthetic Billing Guild",
+      "score": 0.87,
+      "text": "A structured dunning sequence with timed recovery prompts recovers a meaningful share of failed charges before the accounts churn.",
+      "highlights": [
+        "A structured dunning sequence recovers a meaningful share of failed charges before churn."
+      ]
+    },
+    {
+      "title": "Margin Compression and Commitment Drawdown",
+      "url": "https://example.test/notes/margin-compression",
+      "publishedDate": "2025-03-21",
+      "score": 0.81,
+      "text": "Frequent pricing changes and unused commitments can quietly compress margins when credits are applied inconsistently across accounts."
+    },
+    {
+      "title": "Approval-Gated Billing Actions",
+      "url": "https://example.test/patterns/approval-gates",
+      "score": 0.74,
+      "text": "Irreversible billing actions should sit behind an explicit human approval gate backed by an append-only audit trail."
+    }
+  ]
+}
