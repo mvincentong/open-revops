@@ -29,5 +29,9 @@
     "demo:seed": "node scripts/demo-seed.mjs",
     "demo:reset": "node scripts/demo-reset.mjs",
     "secrets:scan": "gitleaks detect --config .gitleaks.toml --redact --no-banner"
+  },
+  "devDependencies": {
+    "typescript": "^6.0.3",
+    "vitest": "^4.1.8"
   }
 }
