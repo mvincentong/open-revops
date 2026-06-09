@@ -20,11 +20,12 @@ executes through Stripe, and records an audit trail._
 ---
 
 > [!NOTE]
-> **Project status: scaffold / pre-build.** This repository currently contains the
-> open-source governance, security, and tooling scaffold. The product packages under
-> `packages/` and `apps/` are intentionally empty placeholders — implementation is built
-> in the open during the build sprint. The directory tree below describes the **intended**
-> architecture, not shipped code. See [`ROADMAP.md`](./ROADMAP.md) for milestones.
+> **Project status: v0.1 — walking skeleton working.** The end-to-end agent loop is
+> implemented and green: `ingest → detect → recommend → approve → execute → audit`. The
+> v0.1 packages under `packages/` and `apps/` are built with unit + integration tests
+> passing, and the golden-path demo runs deterministically (recommends `apply_credit`,
+> leakage risk `0.14 → 0.05`, behind a human approval gate). See [`ROADMAP.md`](./ROADMAP.md)
+> for what's next.
 
 ## The problem
 
