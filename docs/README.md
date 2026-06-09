@@ -13,6 +13,7 @@
 | [`connectors.md`](./connectors.md)                 | Connector contracts (Stripe/Exa/storage).                 |
 | [`deployment.md`](./deployment.md)                 | Local and cloud deployment paths.                         |
 | [`demo-script.md`](./demo-script.md)               | The 4-minute stage flow and a fallback.                   |
+| [`parallel-work-plan.md`](./parallel-work-plan.md) | v0.1 workstreams, contracts, and integration order.       |
 
 See also the operating contract [`AGENTS.md`](../AGENTS.md), the project rules in
 [`.claude/rules/`](../.claude/rules), and the [`ROADMAP.md`](../ROADMAP.md).
