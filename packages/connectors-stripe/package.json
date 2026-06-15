@@ -24,6 +24,6 @@
     "stripe": "^22.2.0"
   },
   "devDependencies": {
-    "@types/node": "^25.9.2"
+    "@types/node": "^25.9.3"
   }
 }
