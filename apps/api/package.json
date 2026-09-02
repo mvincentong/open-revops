@@ -27,7 +27,7 @@
     "@open-revops/connectors-stripe": "workspace:*",
     "@open-revops/demo-data": "workspace:*",
     "@open-revops/policy-engine": "workspace:*",
-    "fastify": "^5.8.5"
+    "fastify": "^5.12.1"
   },
   "devDependencies": {
     "@types/node": "^22.0.0",
